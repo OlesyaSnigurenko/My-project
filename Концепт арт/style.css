@@ -1,0 +1,739 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-size: max(calc(10/1440*100vw), 5px);
+}
+
+body {
+    background-color: #252237;
+    color: #FFFFFF;
+}
+
+main{
+    position: relative;
+    padding: 0 20rem;
+}
+
+/* Заголовки*/
+
+.screen1-text-block__heading{
+    font-weight: 700;
+    font-size: max(7rem, 40px);
+    line-height: max(6.5rem, 40px);
+    letter-spacing: -0.25rem;
+    text-transform: uppercase;
+    margin-top: 8rem;
+}
+
+.screen2__heading, .screen3__heading, .screen4__heading, .screen5__heading, .screen6__heading{
+    font-weight: 700;
+    font-size: max(5rem, 30px);
+    line-height: max(6.2rem, 44px);
+    text-align: center;
+}
+
+.screen2__heading{
+    text-align: left;
+    margin-left: 50rem;
+}
+
+.screen6-blocks__text h2, .screen6__button h3, .screen7__h2, .screen7__price, .screen4__accordeon summary{
+    font-weight: 700;
+    font-size: max(2.3rem, 20px);
+    line-height: 22px;
+}
+
+.screen7__h2{
+    text-align: center;
+}
+
+/* Подзаголовки */
+
+.screen2-container-text-block__subtitle, .screen5-container-text-block__subtitle{
+    font-weight: 400;
+    font-size: max(2.5rem, 18px);
+    line-height: max(4rem, 34px);
+    color: #E2521D;
+    text-align: justify;
+}
+
+/* Текст */
+
+.screen1-text-block__text{
+    font-weight: 500;
+    font-size: max(2rem, 14px);
+    line-height: max(3.4rem, 26px);
+}
+
+.screen2-container-text-block__text, .screen5-container-text-block__text, .screen6-blocks__text p, .screen4__accordeon li, .screen7__text, .footer__list p{
+    font-weight: 400;
+    font-size: max(1.8rem, 14px);
+    line-height: max(3.4rem, 28px);
+}
+
+.screen2-container-text-block__text, .screen5-container-text-block__text, .screen6-blocks__text p, .screen4__accordeon li{
+    color: #8997AB;
+    text-align: justify;
+}
+
+.screen7__text{
+    text-align: center;
+}
+
+.screen3-blocks__text p, .screen6__conditions p{
+    font-weight: 500;
+    font-size: max(1.8rem, 14px);
+    line-height: max(3.4rem, 28px);
+    letter-spacing: 0.1rem;
+}
+
+.screen7-form__label-checkbox{
+    font-weight: 400;
+    font-size: max(1.4rem, 12px);
+    line-height: max(2.4rem, 16px);
+}
+
+/* Общие характеристики экранов */
+
+.screen1{
+    width: 100%;
+    height: 71rem;
+    background-image: url(images/fon1.png);
+    background-size: contain;
+    background-repeat: no-repeat ;
+}
+
+.screen2, .screen3, .screen4, .screen5, .screen6, .screen7{
+    width: 100%;
+    height: auto; 
+}
+
+.screen4{
+    margin-top: 10rem;
+}
+
+/* Экран 1 */
+
+.screen1__logo{
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.4rem;
+    padding: 5rem 0 0 5rem;
+}
+
+.screen1__text-block{
+    width: 45rem;
+    margin-left: 20rem;
+}
+
+.screen1-text-block__text{
+    margin-top: 3rem;
+}
+
+.screen1-text-block__button{
+    width: 80%;
+    height: 8rem;
+    background: #E2521D;
+    border-radius: 1rem;
+    border: none;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.25rem;
+    color: #FFFFFF;
+    margin-top: 6rem;
+}
+
+/* Экран 2 и 5 */
+
+.screen2__container, .screen5__container{
+    display: flex;
+}
+
+.screen2-container__image{
+    width: 45rem;
+    height: 50.5rem;
+    margin-top: -7rem;
+}
+
+.screen2-container__text-block{
+    width: 100%;
+    height: auto;
+    margin: 1.5rem 0 10rem 5.5rem;
+}
+
+.screen2-container-text-block__subtitle{
+    margin-top: 7rem;
+}
+
+.screen2-container-text-block__text{
+    margin-top: 3rem;
+}
+
+.screen5-container__image{
+    width: 70rem;
+    height: 67rem;
+    margin-left: -20rem;
+}
+
+.screen5-container__text-block{
+    width: 100%;
+    height: auto;
+    margin-top: 14rem;
+}
+
+.screen5-container-text-block__text{
+    margin-top: 5rem;
+}
+
+/* Экраны 3 и 6 */
+
+.screen3__blocks, .screen6__blocks{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 6rem;
+    margin-top: 9rem;
+}
+
+.screen3__blocks, .screen6__blocks{
+    margin-top: 9rem;
+    padding: 0 5rem;
+}
+
+.screen3-blocks__text, .screen6-blocks__text{
+    width: 43%;
+    height: auto;
+}
+
+.screen6-blocks__text h2{
+    margin-bottom: 2.5rem;
+}
+
+.screen3-blocks__text img{
+    width: 8.4rem;
+    height: 8.4rem;
+    margin-bottom: 2.5rem;
+}
+
+.screen6-blocks__text img{
+    width: 7rem;
+    height: 7rem;
+    object-fit: contain;
+    margin-bottom: 2.5rem;
+}
+
+.screen6__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 12rem;
+    background-color: #E2521D;
+    margin-top: 10rem;
+}
+
+.screen6__conditions{
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 4.8rem;
+    padding-right: 5rem;
+    margin-top: 3.5rem;
+    border-bottom: 1px solid #706470;
+}
+
+.screen6__conditions p{
+    width: 28%;
+    margin-left: 7rem;
+}
+
+.screen6__conditions p::before{
+    content: "";
+    position: absolute;
+    width: 4.2rem;
+    height: 4.2rem;
+    background-image: url(images/TickSquare.png);
+    background-size: 4.2rem;
+    top: 1.5rem;
+    margin: 0 -7rem;
+}
+
+/* Экран 4 */
+
+.screen4__accordeon{
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.screen4__accordeon details{
+    position: relative;
+}
+
+.screen4__accordeon summary{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    background-color: #0E1B28;
+    list-style: none;
+    margin-top: 3rem;
+    padding-left: 5rem;
+}
+
+.screen4__accordeon li{
+    list-style: none;
+    padding-left: 3rem;
+}
+
+.screen4__accordeon summary::after{
+    content: "";
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-image: url(images/Plus.png);
+    background-size: 5rem;
+    right: 5rem;
+}
+
+.screen4__accordeon details[open] > summary{
+    background-color: #E2521D;
+    list-style: none;
+    margin: 3rem 0;
+    padding-left: 5rem;
+}
+
+.screen4__accordeon details[open] > summary::after{
+    content: "";
+    width: 6.5rem;
+    height: 6.5rem;
+    background-image: url(images/Krestik.png);
+    background-size: 6.5rem;
+    right: 4rem
+}
+
+/* Экран 7 */
+
+.screen7__h2{
+    margin-top: 2.4rem;
+}
+
+.screen7__price{
+    color: #E2521D; 
+}
+
+.screen7__text{
+    margin-top: 3.5rem;
+}
+
+.screen7__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screen7-form__email {
+    width: 45%;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.screen7-form__input {
+    width: 100%;
+    height: 6rem;
+    background: #393C57;
+    color: #FFFFFF;
+    border: 1px solid #E2521D;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 400;
+    font-size: 2rem;
+    padding-left: 2.5rem;
+}
+
+.screen7-form__input::placeholder {
+    color: #FFFFFF;
+}
+
+.screen7-form__label {
+    position: absolute;
+    color: transparent;
+}
+
+.screen7-form__button{
+    width: 45%;
+    height: 6rem;
+    background-color: #E2521D;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    margin-top: 2.4rem;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.25rem;
+}
+
+.screen7-form__checkbox{
+    position: relative;
+    width: 45%;
+    height: 7rem;
+    margin-top: 2.4rem;
+}
+
+.screen7-form__input-checkbox{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.screen7-form__label-checkbox{
+    position: absolute;
+    left: 5.7rem;
+}
+
+.screen7-form__label-checkbox::before{
+    content: '';
+    border: 1px solid #E2521D;
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    left: -4.5rem;
+    top: 0.8rem;
+}
+
+.screen7-form__input-checkbox:checked + .screen7-form__label-checkbox::before {
+    content: '✓';
+    background-color: #393C57;
+    border: 1px solid #E2521D;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 5rem 20rem 3rem;
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px){
+    main{
+        position: relative;
+        padding: 0 60px;
+    }
+
+    /* Экран 1 */
+
+    .screen1__logo{
+        font-size: 20px;
+        padding: 30px 0 0 30px;
+    }
+
+    .screen1__text-block{
+        width: 60rem;
+        margin-left: 60px;
+    }
+
+    .screen1-text-block__button{
+        font-size: 16px;
+    }
+
+    /* Экран 2 и 5*/
+
+    .screen2__heading{
+        text-align: left;
+        margin-left: 295px;
+    }
+
+    .screen2-container__image{
+        width: 50rem;
+        height: 60rem;
+        margin-top: -2rem;
+    }
+
+    .screen2-container__text-block{
+        margin: 3rem 0 5rem 5rem;
+    }
+ 
+    /* Экран 6 */
+
+    .screen6__conditions p::before{
+        content: "";
+        width: 5rem;
+        height: 5rem;
+        background-size: 5rem;
+        top: 2.5rem;
+        margin: 0 -8rem;
+    }
+
+    /* Экран 7 */
+
+    .screen7__h2, .screen7__price{
+        font-size: 16px;
+    }
+
+    .screen7-form__button{
+        font-size: 14px;
+    }
+
+    .screen7-form__label-checkbox{
+        width: 268px;
+        left: 4.5rem;
+    }
+
+    .screen7-form__input-checkbox:checked + .screen7-form__label-checkbox::before {
+        content: '✓';
+        font-size: 16px;
+    }
+
+    .footer{
+        padding: 9rem 60px 3rem;
+    }
+}
+
+@media screen and (max-width: 425px){
+    main{
+        position: relative;
+        padding: 0 15px;
+    }
+
+    /* Экран 1 */
+
+    .screen1{
+        width: 100%;
+        height: 530px;
+        background-image: url(images/fon\ mobile.png);
+        background-position: right;
+        background-size: auto 470px;
+        background-repeat: no-repeat;
+    }
+
+    .screen1__logo{
+        font-size: 20px;
+        padding: 15px 0 0 15px;
+    }
+
+    .screen1__text-block{
+        width: 56rem;
+        margin: 120px 15px 0;
+    }
+
+    .screen1-text-block__text{
+        margin-top: 45px;
+    }
+
+    .screen1-text-block__button{
+        width: 100%;
+        height: 8rem;
+        background: #E2521D;
+        border-radius: 1rem;
+        border: none;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        letter-spacing: 0.25rem;
+        color: #FFFFFF;
+        margin-top: 7rem;
+    }
+
+    /* Экран 2 и 5 */
+
+    .screen2__container, .screen5__container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .screen2__heading, .screen5__heading{
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .screen2-container__image{
+        margin-top: 15px;
+    }
+
+    .screen5-container__image{
+        margin-left: 0;
+    }
+
+    .screen2-container__text-block{
+        margin: 0;
+        margin-bottom: 25px;
+    }
+
+    .screen2-container-text-block__subtitle{
+        margin-top: 5rem;
+    }
+
+    .screen2-container-text-block__text{
+        margin-top: 3rem;
+    }
+
+    .screen5-container__text-block{
+        margin-top: 15px;
+    }
+
+    .screen5-container-text-block__text{
+        margin-bottom: 5rem;
+    }
+
+    /* Экраны 3 и 6 */
+
+    .screen3__blocks, .screen6__blocks{
+        margin-top: 30px;
+        padding: 0;
+    }
+
+    .screen3-blocks__text, .screen6-blocks__text{
+        width: 100%;
+    }
+
+    .screen6__conditions{
+        height: auto;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding-left: 4.8rem;
+        padding-right: 5rem;
+        margin-top: 3.5rem;
+        border-bottom: 1px solid #706470;
+    }
+    
+    .screen6__conditions p{
+        width: 100%;
+        margin-left: 7rem;
+    }
+    
+    .screen6__conditions p::before{
+        content: "";
+        position: absolute;
+        width: 4.2rem;
+        height: 4.2rem;
+        background-image: url(images/TickSquare.png);
+        background-size: 4.2rem;
+        top: auto;
+        margin: 0 -7rem;
+    }
+
+
+
+    /* Экран 4 */
+
+    .screen4__accordeon{
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+    }
+
+    .screen4__accordeon details{
+        position: relative;
+    }
+
+    .screen4__accordeon summary{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 28px;
+        padding-left: 10px;
+    }
+
+    .screen4__accordeon ul, .screen4__accordeon details[open] > summary{
+        padding-left: 10px;
+    }
+
+    .screen4__accordeon li{
+        padding-left: 0;
+        text-align: left;
+    }
+
+    /* Экран 7 */
+
+    .screen7__h2{
+        margin-top: 2.4rem;
+    }
+
+    .screen7__price{
+        color: #E2521D; 
+    }
+
+    .screen7__text{
+        margin-top: 3.5rem;
+    }
+
+    .screen7__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .screen7-form__email {
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    .screen7-form__input {
+        height: 45px;
+        font-weight: 400;
+        font-size: 2rem;
+        padding-left: 2.5rem;
+    }
+
+    .screen7-form__button{
+        width: 100%;
+        height: 40px;
+        margin-top: 2.4rem;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        letter-spacing: 0.25rem;
+    }
+
+    .screen7-form__checkbox{
+        width: 100%;
+        height: 7rem;
+        margin-top: 2.4rem;
+    }
+
+    .screen7-form__input-checkbox{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+
+    .screen7-form__label-checkbox{
+        position: absolute;
+        left: 5.7rem;
+    }
+
+    .screen7-form__label-checkbox::before{
+        content: '';
+        border: 1px solid #E2521D;
+        position: absolute;
+        width: 2.5rem;
+        height: 2.5rem;
+        left: -4.5rem;
+        top: 0.8rem;
+    }
+
+    .screen7-form__input-checkbox:checked + .screen7-form__label-checkbox::before {
+        content: '✓';
+        background-color: #393C57;
+        border: 1px solid #E2521D;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .footer{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 5rem 15px 3rem;
+    }
+}
+
