@@ -623,8 +623,6 @@ main{
         margin: 0 -7rem;
     }
 
-
-
     /* Экран 4 */
 
     .screen4__accordeon{
@@ -656,6 +654,7 @@ main{
 
     .screen7__h2{
         margin-top: 2.4rem;
+        font-size: 14px;
     }
 
     .screen7__price{
@@ -733,7 +732,7 @@ main{
     .footer{
         flex-wrap: wrap;
         height: auto;
-        padding: 5rem 15px 3rem;
+        padding: 10rem 15px 3rem;
     }
 }
 
