@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pangolin', cursive;
+}
+
+body{
+    background-color: rgb(5, 56, 70);
+}
+
+.calendar{
+    width: 1000px;
+    height: 620px;
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    background-image: url(image/фон.png);
+    background-size: contain;
+    background-repeat: no-repeat ;
+}
+
+.calendar__image{
+    width: 380px;
+    height: 500px;
+    margin-left: 130px;
+    transform: rotate(-1.5deg);
+}
+
+.calendar__wrapper{
+    position: relative;
+    width: auto;
+    height: 550px;
+    margin: 0 25px;
+    transform: rotate(-1.5deg);
+}
+
+.calendar-wrapper__year{
+    font-size: 60px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.calendar-wrapper__toggle{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    padding: 0 20px;
+    top: 110px;
+}
+
+.calendar-wrapper__toggle p{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.calendar-wrapper__table{
+    width: 400px;
+    font-size: 28px;
+    table-layout: fixed;
+    text-align: center;
+}
+
+.calendar-wrapper__table caption {
+    font-size: 52px;
+    margin-bottom: 15px;
+    color: rgb(61, 48, 9);
+}
+
+.calendar-wrapper__table tr{
+    height: 50px;
+}
+
+.calendar-wrapper__table th {
+    font-weight: 800;
+}
+
+.calendar-table__reserve{
+    height: 0;
+}
+
+.calendar-table__now-day{
+    border: 4px solid rgb(128, 86, 8);
+    border-radius: 50%;
+    font-size: 28px;
+    font-weight: 800;
+    color: rgb(61, 45, 9);
+}
+
+
